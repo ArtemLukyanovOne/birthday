@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Любимая моя зайка кошка милашка мур мур мур я тебя так люблю и скучаю прям очень очень очень !!!!! С днём рождения !!< </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts-layer" id="heartsLayer"></div>
+  <div class="photos-layer" id="photosLayer"></div>
+  <div class="sparkles-layer" id="sparklesLayer"></div>
+
+  <main class="app">
+    <section class="screen active" id="screenIntro">
+      <div class="glow-card intro-card">
+        <div class="small-label">For my cute girl </div>
+        <h1>У меня есть кое-что для тебя…</h1>
+        <p class="subtitle">Нажми на конверт, когда будешь готова открыть маленький сюрприз 💌</p>
+
+        <button class="envelope-button" id="openEnvelope" aria-label="Открыть конверт">
+          <div class="envelope">
+            <div class="envelope-back"></div>
+            <div class="letter-peek">💗</div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-front"></div>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section class="screen" id="screenLetter">
+      <div class="letter-card">
+        <div class="letter-top">Моей любимой</div>
+        <h2>С днём рождения, родная 💗</h2>
+        <p>
+          Сегодня твой день, и я хочу, чтобы он был таким же тёплым, нежным и красивым,
+          как ты сама. Спасибо тебе за твою улыбку, заботу, смех и за то, что рядом с тобой
+          обычные дни становятся особенными.
+        </p>
+        <p>
+          Я очень тебя люблю. А перед тем как открыть подарок, давай ещё раз вспомним,
+          сколько у нас уже есть тёплых, милых и очень важных моментов.
+        </p>
+        <button class="primary-button" id="goToGift">Посмотреть воспоминания 🎁</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screenGift">
+      <div class="gift-stage" id="giftStage">
+        <div class="memory-intro" id="memoryIntro">
+          <div class="tiny-badge">наши моменты</div>
+          <h2>Это наши тёплые моменты…</h2>
+          <p>Пусть они немного покружатся вокруг тебя, прежде чем откроется твой подарок 💕</p>
+        </div>
+
+        <button class="gift-box" id="openGift" aria-label="Открыть подарок">
+          <div class="box-lid">
+            <span class="ribbon ribbon-horizontal"></span>
+            <span class="ribbon ribbon-vertical"></span>
+          </div>
+          <div class="box-body">
+            <span class="ribbon ribbon-vertical body-ribbon"></span>
+          </div>
+        </button>
+
+        <p class="tap-hint">Нажми на коробку, когда будешь готова ✨</p>
+
+        <div class="certificate-wrap" id="certificateWrap">
+          <div class="shine"></div>
+          <img src="certificate.png" alt="Подарочный сертификат" class="certificate" onerror="this.style.display='none'; document.querySelector('.certificate-placeholder').style.display='grid';" />
+          <div class="certificate-placeholder">
+            <div>
+              <div class="placeholder-title">Тут будет твой сертификат</div>
+              <div class="placeholder-text">Положи рядом с index.html картинку и назови её <b>certificate.png</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="final-message" id="finalMessage">
+          <h2>С днём рождения, моя любимая 💗</h2>
+          <p>Это только маленькая часть того, как сильно я тебя люблю.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="music-button" id="musicButton" aria-label="Включить музыку">♪</button>
+  <audio id="bgMusic" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
